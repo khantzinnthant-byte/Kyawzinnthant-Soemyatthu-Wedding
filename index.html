@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="my">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f8f0df">
+<title>Kyaw Zinn Thant & Soe Myat Thu | Wedding Invitation</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&family=Noto+Serif+Myanmar:wght@400;500;600&display=swap');
+:root{--cream:#fbf5e8;--gold:#b18a43;--gold2:#dfc68e;--ink:#51412e;--rose:#d9a7a0}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--cream);color:var(--ink);font-family:"Noto Serif Myanmar",Georgia,serif}
+button,a{font:inherit} button{cursor:pointer}
+.cover{min-height:100svh;display:grid;place-items:center;padding:22px;background:radial-gradient(ellipse at top,#fffdf5 0,#f8edda 60%,#ead8b8 100%);overflow:hidden;position:relative}
+.cover:before,.cover:after{content:"✿";position:absolute;color:#d8c18d;opacity:.45;font-size:120px}.cover:before{left:-22px;top:4%}.cover:after{right:-20px;bottom:4%;font-size:150px}
+.cover-inner{text-align:center;width:min(100%,440px);position:relative;z-index:1}
+.eyebrow{letter-spacing:.23em;text-transform:uppercase;font-size:.68rem;color:#9b7b42}
+h1{font-weight:400;font-size:clamp(2rem,8vw,3.25rem);line-height:1.25;margin:12px 0;color:#8c6a30}
+.script{font-family:"Great Vibes",cursive;font-size:clamp(2.3rem,10vw,3.8rem);line-height:1.15;color:#a17c39}
+.envelope-button{margin:26px auto 14px;display:block;width:min(78vw,330px);aspect-ratio:1.35;border:0;background:transparent;position:relative;perspective:1000px;filter:drop-shadow(0 16px 16px #8a6b3b26)}
+.envelope{position:absolute;inset:12% 0 0;background:#fffaf0;border:1px solid #d9c38f;border-radius:4px;overflow:visible}
+.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,transparent 49.5%,#ead9b5 50%,transparent 50.8%),linear-gradient(215deg,transparent 49.5%,#e4d0a4 50%,transparent 50.8%);z-index:2}
+.flap{position:absolute;inset:0 0 auto;height:65%;background:linear-gradient(135deg,#fdf7e9,#e8d4a8);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform 1s ease;z-index:4;border-top:1px solid #d9c38f}
+.seal{position:absolute;z-index:5;left:50%;top:46%;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;background:radial-gradient(circle at 30% 25%,#e7ca85,#a5792d 75%);display:grid;place-items:center;color:#fff8dc;font-family:Georgia,serif;font-size:1.1rem;box-shadow:0 3px 7px #87652e44;transition:opacity .4s}
+.env-label{position:absolute;z-index:6;bottom:10%;left:0;right:0;font-size:.72rem;letter-spacing:.16em;color:#9b7b42}
+.opened .flap{transform:rotateX(180deg)}.opened .seal{opacity:0;pointer-events:none}
+.hint{font-size:.8rem;color:#8b795b;margin:8px 0 0}
+main{display:none}.revealed main{display:block;animation:fadeUp 1s both}.revealed .cover{min-height:66svh}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+section{padding:60px 20px;text-align:center;max-width:760px;margin:auto}
+.section-kicker{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:#a1844d}
+.couple{font-family:"Great Vibes",cursive;font-size:clamp(2.7rem,10vw,4.8rem);line-height:1.1;color:#a17c39;margin:16px 0}
+.amp{font-family:Georgia,serif;font-size:.6em;color:#c59c5b}
+.intro{line-height:1.9;max-width:560px;margin:18px auto}
+.rule{width:76px;height:1px;background:var(--gold2);margin:24px auto}
+.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
+.photo-slot{min-height:200px;border:1px solid #d7c28e;background:linear-gradient(135deg,#f5e8ce,#fffaf1);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.photo-slot img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.photo-slot span{padding:12px;color:#9b7b42;font-size:.85rem}
+.photo-note{font-size:.75rem;color:#8d7b5b;margin-top:10px}
+.details-card{border:1px solid #d5bd82;padding:28px 20px;background:#fffaf0;box-shadow:0 12px 36px #8b6b3520}
+.detail-date{font-family:"Playfair Display",serif;font-size:1.55rem;color:#9d7737}
+.detail-label{font-size:.75rem;letter-spacing:.12em;color:#a1844d;margin-top:20px}
+.action{display:inline-flex;align-items:center;justify-content:center;margin:8px 4px;padding:12px 18px;border:1px solid #b18a43;border-radius:2px;color:#7d5e2a;text-decoration:none;background:#fffaf0;font-size:.84rem}
+.action.primary{background:#a17c39;color:#fffaf0}
+.countdown{display:flex;gap:10px;justify-content:center;margin:24px auto;max-width:400px}
+.timebox{flex:1;border:1px solid #e1d0a6;padding:12px 4px;background:#fffaf0}
+.timebox strong{display:block;font:1.5rem "Playfair Display",serif;color:#9d7737}.timebox span{font-size:.66rem}
+.musicbar{position:fixed;right:14px;bottom:14px;z-index:20;border:1px solid #c7a65e;background:#fffaf0;color:#795d2b;border-radius:30px;padding:10px 15px;box-shadow:0 5px 20px #513b201c}
+footer{text-align:center;padding:28px 16px 48px;font-size:.75rem;color:#927a53}
+.petal{position:fixed;top:-20px;z-index:12;pointer-events:none;animation:fall linear forwards;color:#cda6a0;opacity:.8}@keyframes fall{to{transform:translateY(110vh) rotate(540deg);opacity:0}}
+@media(min-width:700px){.photo-grid{gap:18px}.photo-slot{min-height:320px}section{padding:80px 28px}.revealed .cover{min-height:75vh}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="cover" id="cover">
+  <div class="cover-inner">
+    <div class="eyebrow">A celebration of love</div>
+    <h1>Wedding Invitation</h1>
+    <div class="script">Zeno &amp; Soe Myat Thu</div>
+    <button class="envelope-button" id="openInvite" aria-label="Open wedding invitation">
+      <div class="envelope"><div class="flap"></div><div class="seal">Z ♥ S</div><div class="env-label">WITH LOVE</div></div>
+    </button>
+    <p class="hint">Tap the envelope to open</p>
+    <p class="hint" lang="my">ဖိတ်စာဖွင့်ရန် စာအိတ်ကို နှိပ်ပါ</p>
+  </div>
+</div>
+<main id="invitation">
+  <section>
+    <div class="section-kicker">Together with our families</div>
+    <p class="intro" lang="my">ချစ်ခြင်းမေတ္တာနဲ့ စတင်ခဲ့တဲ့ ကျွန်တော်တို့ရဲ့ ခရီးလမ်းသစ်ကို အတူတကွ ဂုဏ်ပြုပေးဖို့ ဖိတ်ကြားအပ်ပါတယ်။</p>
+    <p class="intro">With joyful hearts, we invite you to celebrate the beginning of our next chapter together.</p>
+    <div class="couple">Kyaw Zinn Thant <span class="amp">&amp;</span><br>Soe Myat Thu</div>
+    <div class="rule"></div>
+    <div class="section-kicker">Our special day</div>
+    <div class="detail-date">08 November 2026</div>
+    <p>Sunday · Samut Sakhon, Thailand</p>
+    <p class="intro" lang="my">မိမိတို့ရဲ့ မင်္ဂလာအခမ်းအနားကို တက်ရောက်ချီးမြှင့်ပေးပါရန် လေးစားစွာ ဖိတ်ကြားအပ်ပါသည်။</p>
+  </section>
+  <section>
+    <div class="section-kicker">Our memories</div>
+    <h2 class="script">A little bit of us</h2>
+    <div class="photo-grid">
+      <label class="photo-slot"><span>Photo 1<br><small>Tap to add your photo</small><input type="file" accept="image/*" hidden data-photo="0"></span></label>
+      <label class="photo-slot"><span>Photo 2<br><small>Tap to add your photo</small><input type="file" accept="image/*" hidden data-photo="1"></span></label>
+      <label class="photo-slot"><span>Photo 3<br><small>Tap to add your photo</small><input type="file" accept="image/*" hidden data-photo="2"></span></label>
+      <label class="photo-slot"><span>Photo 4<br><small>Tap to add your photo</small><input type="file" accept="image/*" hidden data-photo="3"></span></label>
+    </div>
+    <p class="photo-note">Preview-only photo picker: to show photos to every guest, add image files to the website before publishing.</p>
+  </section>
+  <section>
+    <div class="section-kicker">Save the date</div>
+    <h2 class="script">Counting down</h2>
+    <div class="countdown" aria-live="polite">
+      <div class="timebox"><strong id="days">--</strong><span>Days</span></div>
+      <div class="timebox"><strong id="hours">--</strong><span>Hours</span></div>
+      <div class="timebox"><strong id="minutes">--</strong><span>Minutes</span></div>
+      <div class="timebox"><strong id="seconds">--</strong><span>Seconds</span></div>
+    </div>
+    <div class="details-card">
+      <div class="detail-label">DATE</div><div class="detail-date">Sunday, 8 November 2026</div>
+      <div class="detail-label">LOCATION</div><p>Samut Sakhon, Thailand</p>
+      <p class="intro">We look forward to celebrating this special day with you.</p>
+      <a class="action primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Samut+Sakhon%2C+Thailand">Get Directions ↗</a>
+      <a class="action" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Kyaw+Zinn+Thant+%26+Soe+Myat+Thu+Wedding&dates=20261108T110000/20261108T150000&details=Wedding+celebration&location=Samut+Sakhon%2C+Thailand">Add to Calendar</a>
+    </div>
+  </section>
+  <section>
+    <div class="section-kicker">Kindly reply</div>
+    <h2 class="script">Will you join us?</h2>
+    <p>It would mean so much to celebrate with you.</p>
+    <a class="action primary" id="rsvp" href="https://wa.me/?text=Congratulations%20and%20thank%20you%20for%20the%20invitation!" target="_blank" rel="noopener">RSVP on WhatsApp ↗</a>
+    <p class="photo-note">Before publishing, replace the RSVP link with your own WhatsApp number.</p>
+  </section>
+  <footer>Made with love · Kyaw Zinn Thant &amp; Soe Myat Thu</footer>
+</main>
+<button class="musicbar" id="musicToggle" aria-label="Play or pause background music">♫ Play music</button>
+<audio id="music" loop preload="none"></audio>
+<script>
+const openBtn=document.getElementById('openInvite'), cover=document.getElementById('cover');
+openBtn.addEventListener('click',()=>{
+  cover.classList.add('opened'); document.body.classList.add('revealed');
+  setTimeout(()=>document.getElementById('invitation').scrollIntoView({behavior:'smooth'}),550);
+  petals();
+});
+function petals(){for(let i=0;i<18;i++){setTimeout(()=>{const p=document.createElement('span');p.className='petal';p.textContent=['✿','❀','✧'][Math.floor(Math.random()*3)];p.style.left=Math.random()*100+'vw';p.style.fontSize=(12+Math.random()*17)+'px';p.style.animationDuration=(5+Math.random()*5)+'s';document.body.appendChild(p);setTimeout(()=>p.remove(),11000)},i*170)}}
+const target=new Date('2026-11-08T11:00:00+07:00').getTime();
+function tick(){let d=Math.max(0,target-Date.now());const vals={days:Math.floor(d/86400000),hours:Math.floor(d%86400000/3600000),minutes:Math.floor(d%3600000/60000),seconds:Math.floor(d%60000/1000)};for(const [k,v] of Object.entries(vals))document.getElementById(k).textContent=String(v).padStart(2,'0')}
+tick();setInterval(tick,1000);
+const music=document.getElementById('music'),musicToggle=document.getElementById('musicToggle');
+musicToggle.addEventListener('click',async()=>{
+  if(!music.src){alert('Add your own licensed MP3 file as music.mp3 beside index.html, then set the audio source to "music.mp3" in the HTML.');return}
+  if(music.paused){try{await music.play();musicToggle.textContent='♫ Pause music'}catch(e){alert('Music could not start. Check the audio file and try again.')}}else{music.pause();musicToggle.textContent='♫ Play music'}
+});
+document.querySelectorAll('input[data-photo]').forEach(input=>input.addEventListener('change',e=>{
+ const file=e.target.files[0];if(!file)return;const slot=e.target.closest('.photo-slot');let img=slot.querySelector('img');if(!img){img=document.createElement('img');slot.appendChild(img)}img.src=URL.createObjectURL(file);slot.querySelector('span').style.display='none';
+}));
+</script>
+</body>
+</html>
